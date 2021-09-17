@@ -130,6 +130,8 @@ else
     {
         ossafe_ini_open("true_config.ini")
         global.lang = ini_read_string("LANG", "LANG", _lang)
+        var is_fullscreen = ini_read_real("SCREEN", "FULLSCREEN", 0)
+        window_set_fullscreen(is_fullscreen)
         ossafe_ini_close()
     }
     text_font = (global.lang == "en" ? 3 : 10)

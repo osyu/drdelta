@@ -134,6 +134,7 @@ if (EVENT == 76)
 {
     global.flag[20] = 0
     global.plot = 0
+    scr_initialize_charnames()
     room_goto(room_krisroom)
 }
 if DRAWNAME

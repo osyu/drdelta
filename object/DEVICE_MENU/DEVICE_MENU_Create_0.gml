@@ -99,9 +99,9 @@ TEMPMESSAGE = " "
 MESSAGETIMER = 0
 version_text = "1.00"
 if (os_type == os_switch)
-    version_text = "1.03"
+    version_text = "1.03a"
 if (os_type == os_ps4)
-    version_text = "1.00"
+    version_text = "1.02"
 for (i = 0; i < 3; i += 1)
     FILE[i] = 0
 for (i = 0; i < 3; i += 1)

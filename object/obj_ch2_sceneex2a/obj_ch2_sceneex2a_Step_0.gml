@@ -45,19 +45,29 @@ if (con == 1)
     if (global.flag[571] == 1)
     {
         scr_weaponget(21)
-        c_soundplay(snd_item)
-        c_speaker("no_name")
-        c_msgsetloc(0, "* (You got PuppetScarf.)/%", "obj_ch2_sceneex2a_slash_Step_0_gml_88_0")
-        c_talk_wait()
+        if (noroom == true)
+            global.flag[468] = 1
+        else
+        {
+            c_soundplay(snd_item)
+            c_speaker("no_name")
+            c_msgsetloc(0, "* (You got PuppetScarf.)/%", "obj_ch2_sceneex2a_slash_Step_0_gml_88_0")
+            c_talk_wait()
+        }
     }
     else
     {
         global.flag[454] = 1
         scr_armorget(21)
-        c_soundplay(snd_item)
-        c_speaker("no_name")
-        c_msgsetloc(0, "* (You got Dealmaker.)/%", "obj_ch2_sceneex2a_slash_Step_0_gml_82_0")
-        c_talk_wait()
+        if (noroom == true)
+            global.flag[468] = 1
+        else
+        {
+            c_soundplay(snd_item)
+            c_speaker("no_name")
+            c_msgsetloc(0, "* (You got Dealmaker.)/%", "obj_ch2_sceneex2a_slash_Step_0_gml_82_0")
+            c_talk_wait()
+        }
     }
     scr_keyitemget(13)
     c_soundplay(snd_item)

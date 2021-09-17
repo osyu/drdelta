@@ -15,7 +15,8 @@ if (con == 0)
 if (con == 1)
 {
     y -= 1
-    image_index += 0.1
+    image_index = imageanimator
+    imageanimator += 0.1
     global.interact = 1
 }
 if (con == 2)
@@ -249,6 +250,8 @@ if (con == 21 || (con == 21 && forcend == 1))
     with (obj_spamton_neo_enemy)
         x = 9999
     scr_weaponget(21)
+    if (noroom == true)
+        global.flag[468] = 2
     scr_keyitemget(13)
 }
 if (con == 23 && (!d_ex()))

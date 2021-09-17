@@ -24,13 +24,14 @@ if (con == 0)
 if (con == 1)
 {
     y -= 1
-    image_index += 0.1
+    image_index = susindex
     susindex += 0.1
     susy -= 1
     global.interact = 1
 }
 if (con == 2)
 {
+    image_speed = 0
     image_index = 0
     susindex = 0
     con = 2.1

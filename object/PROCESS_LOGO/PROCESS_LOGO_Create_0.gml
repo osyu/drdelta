@@ -23,3 +23,4 @@ if (global.plot == 0)
 skipped = false
 skiptimer = 0
 room_speed = 15
+draw_screen = true

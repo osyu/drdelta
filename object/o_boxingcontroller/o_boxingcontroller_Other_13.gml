@@ -1,3 +1,12 @@
+if i_ex(obj_gigaqueen_enemy)
+{
+    with (obj_gigaqueen_enemy)
+    {
+        obj_gigaqueen_enemy.healcount = 0
+        global.actcost[myself][2] = 50
+        scr_spellmenu_setup()
+    }
+}
 global.hp[1] = 1
 dead = 0.5
 if (global.flag[526] < 10)

@@ -63,13 +63,13 @@ scr_84_init_localization = function()
             ds_map_add(sm, "spr_city_mice_sign_02", 2813)
             ds_map_add(sm, "spr_city_mice_sign_03", 3175)
             ds_map_add(sm, "spr_bnamenoelle", 864)
-            ds_map_add(sm, "spr_bnamethrash", 3305)
+            ds_map_add(sm, "spr_bnamethrash", 3306)
             ds_map_add(sm, "spr_cutscene_27_tender_goodbye", 2994)
-            ds_map_add(sm, "spr_ch2_cityscreen", 3274)
+            ds_map_add(sm, "spr_ch2_cityscreen", 3275)
             ds_map_add(sm, "spr_battlemsg", 3069)
             ds_map_add(sm, "spr_queenscreen", 2110)
             ds_map_add(sm, "spr_acrade_retire", 3152)
-            ds_map_add(sm, "spr_sneo_playback", 3315)
+            ds_map_add(sm, "spr_sneo_playback", 3316)
             var sndm = global.chemg_sound_map
         }
         else
@@ -109,7 +109,7 @@ scr_84_init_localization = function()
             ds_map_add(sm, "spr_battlemsg", 2522)
             ds_map_add(sm, "spr_queenscreen", 37)
             ds_map_add(sm, "spr_acrade_retire", 2187)
-            ds_map_add(sm, "spr_sneo_playback", 3324)
+            ds_map_add(sm, "spr_sneo_playback", 3269)
             sndm = global.chemg_sound_map
         }
     }

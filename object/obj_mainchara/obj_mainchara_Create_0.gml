@@ -1,5 +1,6 @@
 scr_depth()
 global.currentroom = room
+scr_initialize_charnames()
 autorun = 0
 bg = 0
 if instance_exists(obj_backgrounderparent)

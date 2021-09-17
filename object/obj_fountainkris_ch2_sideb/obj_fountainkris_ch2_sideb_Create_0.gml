@@ -6,6 +6,7 @@ image_yscale = 2
 siner = 0
 made = 0
 adjust = 0
+imageanimator = 0
 con = 0
 global.interact = 1
 y += 260

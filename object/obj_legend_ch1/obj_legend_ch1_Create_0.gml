@@ -20,3 +20,4 @@ if (global.plot == 20)
     ingame = true
 skipped = false
 skiptimer = 0
+draw_screen = true

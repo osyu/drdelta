@@ -26,7 +26,7 @@ if (global.interact == 5)
             else
                 global.submenucoord[global.submenu] = 0
         }
-        if (button1_p() && onebuffer < 0)
+        if (button1_p() && onebuffer < 0 && twobuffer < 0)
         {
             onebuffer = 2
             if (global.submenu == 5)
@@ -48,7 +48,7 @@ if (global.interact == 5)
             }
         }
         close = 0
-        if (button2_p() && twobuffer < 0)
+        if (button2_p() && twobuffer < 0 && onebuffer < 0)
             close = 1
         if (global.submenu == 22)
         {
@@ -465,21 +465,6 @@ if (global.interact == 5)
                             new_key = vk_down
                             control_select_con = 2
                         }
-                        if keyboard_check_pressed(vk_return)
-                        {
-                            new_key = vk_return
-                            control_select_con = 2
-                        }
-                        if keyboard_check_pressed(vk_shift)
-                        {
-                            new_key = vk_shift
-                            control_select_con = 2
-                        }
-                        if keyboard_check_pressed(vk_control)
-                        {
-                            new_key = vk_control
-                            control_select_con = 2
-                        }
                         if keyboard_check_pressed(vk_backspace)
                         {
                             new_key = vk_backspace
@@ -497,6 +482,21 @@ if (global.interact == 5)
                                 new_key = -1
                                 control_select_con = 0
                             }
+                        }
+                        if keyboard_check_pressed(vk_return)
+                        {
+                            new_key = -1
+                            control_select_con = 0
+                        }
+                        if keyboard_check_pressed(vk_shift)
+                        {
+                            new_key = -1
+                            control_select_con = 0
+                        }
+                        if keyboard_check_pressed(vk_control)
+                        {
+                            new_key = -1
+                            control_select_con = 0
                         }
                         if keyboard_check_pressed(vk_escape)
                         {
@@ -951,7 +951,7 @@ if (global.interact == 5)
         }
         if (global.submenu == 2)
         {
-            if (button1_p() && onebuffer < 0)
+            if (button1_p() && onebuffer < 0 && twobuffer < 0)
             {
                 onebuffer = 3
                 scr_iteminfo(global.item[global.submenucoord[2]])
@@ -1033,7 +1033,7 @@ if (global.interact == 5)
                         selectnoise = true
                 }
             }
-            if (button2_p() && twobuffer < 0)
+            if (button2_p() && onebuffer < 0 && twobuffer < 0)
             {
                 cancelnoise = true
                 twobuffer = 2
@@ -1314,7 +1314,7 @@ if (global.interact == 5)
                 movenoise = true
             }
         }
-        if (button1_p() && onebuffer < 0)
+        if (button1_p() && onebuffer < 0 && twobuffer < 0)
         {
             selectnoise = true
             onebuffer = 2
