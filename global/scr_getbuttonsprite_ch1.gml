@@ -4,7 +4,7 @@ scr_getbuttonsprite_ch1 = function(argument0, argument1)
     var isString = argument1
     var button = -4
     var is_dualshock = (os_type == os_ps4 || obj_gamecontroller.gamepad_type == true)
-    var button_sprite = -4
+    var button_sprite = button_questionmark
     if isString
     {
         if (control == "A")
