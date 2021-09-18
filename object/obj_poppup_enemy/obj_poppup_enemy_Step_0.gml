@@ -1,3 +1,5 @@
+if (blockbuffer > 0)
+    blockbuffer--
 if (global.monster[myself] == true)
 {
     if (scr_isphase("enemytalk") && talked == false)
@@ -296,8 +298,9 @@ if (global.myfight == 3)
             popupscreated++
             poppupwait = 1
         }
-        if button3_p()
+        if (button3_p() && blockbuffer == 0)
         {
+            blockbuffer = 2
             if (blockTimer == 0)
             {
                 blockTimer = 1
