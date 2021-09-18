@@ -43,7 +43,7 @@ if (state == 1)
         var _character = (i == 0 ? obj_mainchara : global.cinstance[(i - 1)])
         var _cup = cup_char[i]
         var _jumpInDuration = jumpInDuration
-        var _rollSprites = [544, 544, 542, 3337]
+        var _rollSprites = [544, 544, 542, 3338]
         var _rideToRide = rideToRide
         _rideToRide = 1
         with (_character)

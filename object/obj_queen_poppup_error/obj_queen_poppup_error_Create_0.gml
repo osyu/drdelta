@@ -1,5 +1,5 @@
 state = -1
-sprite_index = choose(3320, 3303)
+sprite_index = choose(3321, 3304)
 scale = 0
 blockstate = 0
 timer = 0

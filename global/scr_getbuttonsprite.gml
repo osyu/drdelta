@@ -4,7 +4,7 @@ scr_getbuttonsprite = function(argument0, argument1)
     var isString = argument1
     var button = -4
     var is_dualshock = (os_type == os_ps4 || obj_gamecontroller.gamepad_type == true)
-    var button_sprite = -4
+    var button_sprite = button_questionmark
     var invert = (is_dualshock && (global.typer == 50 || global.typer == 70 || global.typer == 71))
     if isString
     {
@@ -194,7 +194,7 @@ scr_getbuttonsprite = function(argument0, argument1)
     {
         button_sprite = button_xbox_share
         if is_dualshock
-            return 2515;
+            return 2516;
         if (os_type == os_switch)
             button_sprite = button_switch_plus_0
         return button_sprite;

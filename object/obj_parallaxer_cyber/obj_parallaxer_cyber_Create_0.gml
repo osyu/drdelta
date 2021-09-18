@@ -32,7 +32,7 @@ if makelines
 }
 with (obj_mainchara)
     bg = 1
-var layersprites = [3132, 3133, 3135, 3136]
+var layersprites = [3133, 3134, 3136, 3137]
 for (var i = 0; i < array_length_1d(layersprites); i++)
 {
     if (i == 2)

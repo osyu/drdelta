@@ -402,7 +402,7 @@ if (global.plot < 150)
         }
         c_mus("stop")
         c_soundplay(snd_break1)
-        c_var_instance(rouxls, "sprite_index", 1164)
+        c_var_instance(rouxls, "sprite_index", 1165)
         c_var_instance(rouxls, "x", (rouxls.x - 34))
         c_var_instance(rouxls, "y", (rouxls.y - 126))
         c_var_instance(rouxls, "image_speed", 0.25)
