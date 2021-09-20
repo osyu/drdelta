@@ -601,8 +601,8 @@ for (i = 0; i < 8; i += 1)
                     wireheart.bossx = (x + 10)
                     wireheart.bossy = (y + 80)
                     wireheart.type = 0
-                    wireheart.target = obj_sneo_bulletcontroller.target
-                    wireheart.damage = obj_sneo_bulletcontroller.damage
+                    wireheart.target = 3
+                    wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                 }
                 else if (hearttype == 1)
                 {
@@ -611,22 +611,22 @@ for (i = 0; i < 8; i += 1)
                     wireheart.bossx = (x + 10)
                     wireheart.bossy = (y + 80)
                     wireheart.type = 0
-                    wireheart.target = obj_sneo_bulletcontroller.target
-                    wireheart.damage = obj_sneo_bulletcontroller.damage
+                    wireheart.target = 3
+                    wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                     wireheart = instance_create((x + 10), (y + 80), obj_sneo_wireheart)
                     wireheart.boss = id
                     wireheart.bossx = (x + 10)
                     wireheart.bossy = (y + 80)
                     wireheart.type = 1
-                    wireheart.target = obj_sneo_bulletcontroller.target
-                    wireheart.damage = obj_sneo_bulletcontroller.damage
+                    wireheart.target = 3
+                    wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                     wireheart = instance_create((x + 10), (y + 80), obj_sneo_wireheart)
                     wireheart.boss = id
                     wireheart.bossx = (x + 10)
                     wireheart.bossy = (y + 80)
                     wireheart.type = 1
-                    wireheart.target = obj_sneo_bulletcontroller.target
-                    wireheart.damage = obj_sneo_bulletcontroller.damage
+                    wireheart.target = 3
+                    wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                 }
                 else if (hearttype == 2)
                 {
@@ -636,8 +636,8 @@ for (i = 0; i < 8; i += 1)
                     wireheart.bossy = (y + 80)
                     wireheart.type = 0
                     wireheart.bighearttype = 1
-                    wireheart.target = obj_sneo_bulletcontroller.target
-                    wireheart.damage = obj_sneo_bulletcontroller.damage
+                    wireheart.target = 3
+                    wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                 }
                 else if (hearttype == 3)
                 {
@@ -648,8 +648,8 @@ for (i = 0; i < 8; i += 1)
                         wireheart.bossx = (x + 10)
                         wireheart.bossy = (y + 80)
                         wireheart.type = 1
-                        wireheart.target = obj_sneo_bulletcontroller.target
-                        wireheart.damage = obj_sneo_bulletcontroller.damage
+                        wireheart.target = 3
+                        wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                     }
                     if (makehearttype == 0 || makehearttype == 3)
                     {
@@ -658,8 +658,8 @@ for (i = 0; i < 8; i += 1)
                         wireheart.bossx = (x + 10)
                         wireheart.bossy = (y + 80)
                         wireheart.type = 3
-                        wireheart.target = obj_sneo_bulletcontroller.target
-                        wireheart.damage = obj_sneo_bulletcontroller.damage
+                        wireheart.target = 3
+                        wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                         wireheart.altbiter = 3
                     }
                     if (makehearttype == 0 || makehearttype == 4)
@@ -669,8 +669,8 @@ for (i = 0; i < 8; i += 1)
                         wireheart.bossx = (x + 10)
                         wireheart.bossy = (y + 80)
                         wireheart.type = 3
-                        wireheart.target = obj_sneo_bulletcontroller.target
-                        wireheart.damage = obj_sneo_bulletcontroller.damage
+                        wireheart.target = 3
+                        wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                         wireheart.altbiter = 4
                     }
                 }
@@ -683,8 +683,8 @@ for (i = 0; i < 8; i += 1)
                         wireheart.bossx = (x + 10)
                         wireheart.bossy = (y + 80)
                         wireheart.type = 1
-                        wireheart.target = obj_sneo_bulletcontroller.target
-                        wireheart.damage = obj_sneo_bulletcontroller.damage
+                        wireheart.target = 3
+                        wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                     }
                     if (makehearttype == 0 || makehearttype == 3)
                     {
@@ -693,8 +693,8 @@ for (i = 0; i < 8; i += 1)
                         wireheart.bossx = (x + 10)
                         wireheart.bossy = (y + 80)
                         wireheart.type = 4
-                        wireheart.target = obj_sneo_bulletcontroller.target
-                        wireheart.damage = obj_sneo_bulletcontroller.damage
+                        wireheart.target = 3
+                        wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                     }
                     if (makehearttype == 0 || makehearttype == 4)
                     {
@@ -703,8 +703,8 @@ for (i = 0; i < 8; i += 1)
                         wireheart.bossx = (x + 10)
                         wireheart.bossy = (y + 80)
                         wireheart.type = 4
-                        wireheart.target = obj_sneo_bulletcontroller.target
-                        wireheart.damage = obj_sneo_bulletcontroller.damage
+                        wireheart.target = 3
+                        wireheart.damage = floor(((global.monsterat[obj_spamton_neo_enemy.myself] * 5) / 3))
                     }
                 }
                 for (_n = 0; _n < 6; _n++)

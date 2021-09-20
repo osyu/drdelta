@@ -6302,7 +6302,7 @@ scr_text = function(argument0)
             break
         case 1218:
             snd_play(snd_dooropen)
-            scr_script_delayed(gml_Script_snd_play, 10, 62)
+            scr_script_delayed(gml_Script_snd_play, 10, 63)
             scr_speaker("susie")
             msgsetloc(0, "\\E2\\M0* Hey^1, Kris^1! Let's beat it already./", "scr_text_slash_scr_text_gml_7317_0")
             msgnextloc("\\E0* Man^1, he kept telling me about Noelle^1, like.../", "scr_text_slash_scr_text_gml_7318_0")

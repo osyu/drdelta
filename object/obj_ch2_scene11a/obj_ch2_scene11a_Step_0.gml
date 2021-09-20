@@ -200,7 +200,7 @@ if (con == 2 && customcon == 0)
     {
         con = 11
         tempcon = 0
-        c_var_instance(coaster_berdly, "character_sprite", 1844)
+        c_var_instance(coaster_berdly, "character_sprite", 1845)
         c_var_instance(coaster_berdly, "character_offset_x", -52)
         c_var_lerp_instance(coaster_berdly, "x", 1800, 1650, 15)
         c_wait(10)
@@ -472,7 +472,7 @@ if (con == 10)
     c_wait(28)
     c_soundplay(snd_swing)
     c_wait(12)
-    c_var_instance(coaster_berdly, "character_sprite", 1844)
+    c_var_instance(coaster_berdly, "character_sprite", 1845)
     c_var_instance(coaster_berdly, "character_offset_y", 0)
     c_wait(10)
     c_speaker("berdly")

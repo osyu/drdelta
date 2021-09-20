@@ -505,7 +505,10 @@ if (MENU_NO == 0 || MENU_NO == 10)
         if (MENUCOORD[M] == 8 && CANQUIT)
         {
             SELNOISE = true
-            ossafe_game_end()
+            if global.is_console
+                ossafe_game_end()
+            else
+                game_end()
         }
     }
     if (button2_p() && TWOBUFFER < 0)

@@ -104,7 +104,7 @@ if (global.monster[myself] == true)
                 else
                     obj_musicalbullet_controller.enemy_count += 1
             }
-            scr_turntimer(235)
+            scr_turntimer(185)
             turns += 1
             global.typer = 6
             global.fc = 0

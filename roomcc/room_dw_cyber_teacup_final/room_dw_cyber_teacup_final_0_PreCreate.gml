@@ -1,6 +1,6 @@
 uniqueRideExperience = 2
-endY = 102304.y
-jumpToRide = 102304
+endY = 102305.y
+jumpToRide = 102305
 camFollowAfter = 0
 uniqueBulletPattern = 2
 camTargetHeightNormal = 390
