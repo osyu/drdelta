@@ -72,6 +72,7 @@ if (falling == 1)
         brokenpot.depth = 800000
         falling = 2
         timer = 0
+        global.interact = 0
         if (global.flag[385] == 0)
             global.flag[385] = 1
         visible = false

@@ -252,7 +252,7 @@ if (room == room_torbathroom)
         }
         if (x >= 160 && x <= 190)
         {
-            if (global.plot == 210)
+            if (global.plot >= 210)
             {
                 scr_speaker("no_name")
                 msgsetloc(0, "* (No need for it.)/%", "obj_readable_room1_slash_Other_10_gml_367_0")

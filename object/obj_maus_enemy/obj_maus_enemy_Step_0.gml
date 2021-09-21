@@ -353,7 +353,7 @@ if (global.myfight == 3)
                 instance_destroy()
             if (global.char[2] == 3)
             {
-                if (global.actingtarget[2] == myself)
+                if (global.actingtarget[2] == myself && global.actingsingle[2] == true)
                     scr_nextact()
             }
             instance_destroy()

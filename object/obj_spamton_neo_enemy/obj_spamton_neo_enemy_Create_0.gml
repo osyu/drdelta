@@ -78,6 +78,7 @@ lastwirecon = 0
 lastwiretimer = 0
 headendcon = 0
 finalattackconversationcon = 0
+funnycheat = 0
 laserflash = irandom(3)
 talkmax = 90
 image_speed = 0.16666666666666666

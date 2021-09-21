@@ -255,9 +255,9 @@ else if (menuno == 1)
             draw_set_color(c_white)
         draw_text((xx + 350), (((yy + 300) + 12) + 12), string_hash_to_newline(returntxt))
         if (overcoord == 0)
-            draw_sprite(heartsprite, 0, 142, (324 + (string_height(savetxt) / 4)))
+            draw_sprite(heartsprite, 0, (((xx + 170) - 32) + 4), (((yy + 300) + 24) + (string_height(savetxt) / 4)))
         else
-            draw_sprite(heartsprite, 0, 322, (324 + (string_height(returntxt) / 4)))
+            draw_sprite(heartsprite, 0, (((xx + 350) - 32) + 4), (((yy + 300) + 24) + (string_height(returntxt) / 4)))
         if (button1_p() && buffer < 0)
         {
             if (overcoord == 0)

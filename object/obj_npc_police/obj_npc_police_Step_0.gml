@@ -5,7 +5,7 @@ if i_ex(bars)
         if (global.flag[317] == 0)
             bars.depth = 100000000
         else
-            bars.depth = (obj_mainchara.y > 60 ? 100000000 : 0)
+            bars.depth = (obj_mainchara.y > 60 ? 100000000 : 5000)
     }
     else
     {

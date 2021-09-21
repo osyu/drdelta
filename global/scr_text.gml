@@ -4954,6 +4954,7 @@ scr_text = function(argument0)
         case 1134:
             if (global.choice == 0)
             {
+                scr_tempsave()
                 scr_speaker("no_name")
                 msgsetloc(0, "* (You put the disk into the broken down mechanism.)/", "scr_text_slash_scr_text_gml_5662_0")
                 msgnextloc("* (...)/", "scr_text_slash_scr_text_gml_5663_0")
@@ -4966,7 +4967,6 @@ scr_text = function(argument0)
                 with (obj_readable_room1)
                     read = 0
                 global.flag[309] = 8
-                scr_tempsave()
             }
             if (global.choice == 1)
                 msgsetloc(0, "%%", "scr_text_slash_scr_text_gml_5676_0")

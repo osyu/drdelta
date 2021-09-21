@@ -1,4 +1,4 @@
-scr_kana_check = function()
+scr_kana_check = function(argument0)
 {
     var kanafound = 0
     var ___stringlength = string_length(argument0)

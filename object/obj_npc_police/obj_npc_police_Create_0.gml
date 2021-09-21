@@ -94,8 +94,11 @@ else
     doorcollider = instance_create(223, 95, obj_solidblock)
     doorcollider.image_xscale = 0.35
     doorcollider.image_yscale = 0.95
-    undynedesk = instance_create(128, 97, obj_npc_room)
+    undynedesk = instance_create(128, 97, obj_solidblock)
     undynedesk.sprite_index = spr_lw_police_table_broken
+    undynedesk.visible = true
+    with (undynedesk)
+        scr_depth()
     napstablook = instance_create(92, 84, obj_npc_napstablook_cop)
     soundalarm = global.flag[317] == 2
     napstacon = (global.flag[317] == 2 ? 0 : -1)

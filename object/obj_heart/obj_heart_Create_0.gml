@@ -17,3 +17,4 @@ f = 2
 z_hold_f = 0
 chargeshot_delay = 0
 superchargetimer = 0
+chargeshotcount = 0

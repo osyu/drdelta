@@ -1,13 +1,3 @@
-if keyboard_check_pressed(ord("R"))
-{
-    snd_free_all()
-    room_restart()
-}
-if keyboard_check_pressed(ord("P"))
-{
-    snd_free_all()
-    game_restart()
-}
 if (timer == 0)
 {
     snd_free_all()
