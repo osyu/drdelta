@@ -1,3 +1,5 @@
+if i_ex(obj_mainchara)
+    depth = (obj_mainchara.depth - 10)
 image_xscale = 2
 image_yscale = 2
 if (falling == -2)
@@ -72,7 +74,8 @@ if (falling == 1)
         brokenpot.depth = 800000
         falling = 2
         timer = 0
-        global.interact = 0
+        if (con == 0)
+            global.interact = 0
         if (global.flag[385] == 0)
             global.flag[385] = 1
         visible = false
@@ -85,3 +88,12 @@ if (falling == 3)
     x = (obj_mainchara.x + 20)
     y = (obj_mainchara.y + 10)
 }
+if (falling == -99)
+{
+    if (!i_ex(obj_battleback))
+        falling = memfalling
+}
+if i_ex(obj_battleback)
+    falling = -99
+else
+    memfalling = falling

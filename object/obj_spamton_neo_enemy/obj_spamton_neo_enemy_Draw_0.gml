@@ -1270,7 +1270,51 @@ for (i = 0; i < 8; i += 1)
         partrot[5] -= random(60)
     if (headforceframe != -1 && i == 5)
         partframe[5] = headforceframe
-    draw_monster_body_part_ext(partsprite[i], partframe[i], ((((x + (partx[i] * facing)) + (partxoff[i] * facing)) + lastxoff) + shakevar), (((y + party[i]) + partyoff[i]) - shakevar), ((2 + scalebonus) * facing), (2 + scalebonus), (partrot[i] * facing), partblend[i], image_alpha)
+    if (funnycheat > 5)
+    {
+        if (funnycheattimer < 28)
+            funnycheattimer += 0.125
+        partblend[5] = merge_color(c_white, c_red, (funnycheattimer / 30))
+        if (funnycheattimer == 24)
+        {
+            snd_play(snd_carhonk)
+            funnycheattimer3++
+        }
+        if (funnycheattimer3 > 0 && funnycheattimer3 < 33 && i == 5)
+        {
+            funnycheattimer3++
+            if (funnycheattimer3 > 0 && funnycheattimer3 < 6)
+                headexpand = lerp(headexpand, 2, (funnycheattimer3 / 6))
+            if (funnycheattimer3 >= 8 && funnycheattimer3 < 16)
+                headexpand = lerp(headexpand, 0, ((funnycheattimer3 - 8) / 8))
+            if (funnycheattimer3 >= 16 && funnycheattimer3 < 22)
+                headexpand = lerp(headexpand, 2, ((funnycheattimer3 - 16) / 6))
+            if (funnycheattimer3 >= 24 && funnycheattimer3 < 32)
+                headexpand = lerp(headexpand, 0, ((funnycheattimer3 - 24) / 8))
+            if ((funnycheattimer3 >= 4 && funnycheattimer3 <= 10) || (funnycheattimer3 >= 20 && funnycheattimer3 <= 26))
+                shakevar = (-12 + random(24))
+        }
+        funnycheattimer2++
+        if (funnycheattimer2 >= 10 && image_alpha > 0.6)
+        {
+            smokey = instance_create((x + 50), (y + 80), obj_afterimage_grow)
+            smokey.visible = false
+            with (smokey)
+                scr_script_delayed(gml_Script_scr_var, 1, "visible", 1)
+            smokey.depth = (depth + 10)
+            smokey.image_alpha = 2.5
+            smokey.sprite_index = spr_cakesmoke
+            smokey.hspeed = random_range(2, 8)
+            smokey.gravity = -0.5
+            smokey.friction = 0.2
+            smokey.vspeed = random_range(-1, -2)
+            funnycheattimer2 = 0
+        }
+    }
+    var expand = 0
+    if (i == 5)
+        expand = headexpand
+    draw_monster_body_part_ext(partsprite[i], partframe[i], ((((x + (partx[i] * facing)) + (partxoff[i] * facing)) + lastxoff) + shakevar), (((y + party[i]) + partyoff[i]) - shakevar), (((2 + scalebonus) * facing) + expand), ((2 + scalebonus) + expand), (partrot[i] * facing), partblend[i], image_alpha)
     if (violentendflash > 0)
     {
         d3d_set_fog(true, c_white, 0, 1)

@@ -65,7 +65,7 @@ TWOBUFFER = 0
 THREAT = 0
 TEMPMESSAGE = " "
 MESSAGETIMER = 0
-version_text = "1.05 "
+version_text = "1.06 "
 if (os_type == os_switch)
     version_text = "1.03a "
 if (os_type == os_ps4)

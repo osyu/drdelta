@@ -283,7 +283,7 @@ if (color == 0x000001)
         if (chargeshotcount > 1)
         {
             with (obj_spamton_neo_enemy)
-                funnycheat += 1
+                event_user(4)
         }
         if (global.chapter == 2 && instance_exists(obj_spamton_neo_enemy))
             obj_spamton_neo_enemy.bigshotused = 1

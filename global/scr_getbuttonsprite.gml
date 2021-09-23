@@ -194,7 +194,7 @@ scr_getbuttonsprite = function(argument0, argument1)
     {
         button_sprite = button_xbox_share
         if is_dualshock
-            return 2517;
+            return 2516;
         if (os_type == os_switch)
             button_sprite = button_switch_plus_0
         return button_sprite;

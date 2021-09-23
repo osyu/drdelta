@@ -11,6 +11,8 @@ scr_gameover = function()
             global.hp[3] = global.maxhp[3]
             scr_tempsave()
         }
+        if i_ex(obj_spamton_neo_enemy)
+            global.tempflag[37] = (global.tempflag[37] + 1)
     }
     if (global.flag[35] == 0)
     {
