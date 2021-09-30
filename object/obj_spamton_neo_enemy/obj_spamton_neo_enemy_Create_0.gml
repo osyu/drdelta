@@ -83,6 +83,7 @@ funnycheattimer = 0
 funnycheattimer2 = 0
 funnycheattimer3 = 0
 headexpand = 0
+hellmode = 0
 laserflash = irandom(3)
 talkmax = 90
 image_speed = 0.16666666666666666

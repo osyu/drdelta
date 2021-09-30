@@ -2342,7 +2342,7 @@ scr_text = function(argument0)
             global.choicemsg[2] = stringsetloc(" ", "scr_text_slash_scr_text_gml_2662_0_b")
             global.choicemsg[3] = stringsetloc(" ", "scr_text_slash_scr_text_gml_2663_0")
             global.msg[0] = stringsetloc("* (It's your bed.)/", "scr_text_slash_scr_text_gml_2662_0")
-            global.msg[1] = stringsetloc("* (If you go to back to sleep^1, \\cYyou may miss a lot of important things\\cW.)/", "scr_text_slash_scr_text_gml_2665_0_b")
+            global.msg[1] = stringsetloc("* (If you go back to sleep^1, \\cYyou may miss a lot of important things\\cW.)/", "scr_text_slash_scr_text_gml_2665_0_b")
             global.msg[2] = stringsetloc("* (Will you go to bed?)/", "scr_text_slash_scr_text_gml_2664_0")
             global.msg[3] = stringsetloc("\\C2 ", "scr_text_slash_scr_text_gml_2665_0")
             break
@@ -6635,10 +6635,15 @@ scr_text = function(argument0)
                         global.flag[241] = 7
                     if (global.tempflag[36] == 2)
                         global.flag[241] = 6
+                    var get_crystal = scr_keyitemcheck(13) == 0
+                    if get_crystal
+                        scr_keyitemget(13)
                     global.tempflag[36] = 3
                     global.flag[460] = 1
                     scr_speaker("no_name")
                     msgsetloc(0, "* (You reached inside and found something alongside a strange piece of glass...)/", "scr_text_slash_scr_text_gml_7648_0")
+                    if get_crystal
+                        msgnextloc("* (You got ShadowCrystal.)/", "scr_text_slash_scr_text_gml_7658_0")
                     msgnext(itemgetstring)
                     if i_ex(obj_npc_castle_cliff)
                     {

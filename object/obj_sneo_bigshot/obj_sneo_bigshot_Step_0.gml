@@ -33,7 +33,7 @@ else
     image_xscale = lerp(image_xscale, 2, 0.2)
 if (timer != 0)
     timer++
-if (timer > 16)
+if (timer > 13)
 {
     instance_destroy()
     snd_volume(snd_rumble, 0, 70)

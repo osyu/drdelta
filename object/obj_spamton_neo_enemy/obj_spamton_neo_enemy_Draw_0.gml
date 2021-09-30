@@ -602,6 +602,7 @@ for (i = 0; i < 8; i += 1)
                     wireheart.bossy = (y + 80)
                     wireheart.type = 0
                     wireheart.target = 3
+                    wireheart.special = hellmode
                     if (scr_sideb_get_phase() > 2)
                     {
                         wireheart.target = obj_sneo_bulletcontroller.target
@@ -618,6 +619,7 @@ for (i = 0; i < 8; i += 1)
                     wireheart.bossy = (y + 80)
                     wireheart.type = 0
                     wireheart.target = 3
+                    wireheart.special = hellmode
                     if (scr_sideb_get_phase() > 2)
                     {
                         wireheart.target = obj_sneo_bulletcontroller.target
@@ -661,6 +663,7 @@ for (i = 0; i < 8; i += 1)
                     wireheart.type = 0
                     wireheart.bighearttype = 1
                     wireheart.target = 3
+                    wireheart.special = hellmode
                     if (scr_sideb_get_phase() > 2)
                     {
                         wireheart.target = obj_sneo_bulletcontroller.target

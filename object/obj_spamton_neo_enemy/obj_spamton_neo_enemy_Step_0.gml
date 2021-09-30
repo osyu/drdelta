@@ -745,6 +745,7 @@ if (global.fighting == true)
                     global.monsterattackname[myself] = "HeartAttackNeo"
                     dc = scr_bulletspawner(x, y, obj_sneo_bulletcontroller)
                     dc.type = 1.5
+                    dc.special = hellmode
                 }
                 else if (rr == 3)
                 {
@@ -777,6 +778,7 @@ if (global.fighting == true)
                     global.monsterattackname[myself] = "SneoFaceAttack"
                     dc = scr_bulletspawner(x, y, obj_sneo_bulletcontroller)
                     dc.type = 12
+                    dc.special = hellmode
                     faceattackcount++
                 }
                 else if (rr == 8)
@@ -827,9 +829,9 @@ if (global.fighting == true)
                 if (rr == 1)
                     scr_turntimer(300)
                 if (rr == 2)
-                    scr_turntimer(750)
+                    scr_turntimer((750 + (hellmode * 450)))
                 if (rr == 2 && difficulty == 1)
-                    scr_turntimer(850)
+                    scr_turntimer((850 + (hellmode * 450)))
                 if (rr == 2 && difficulty == 6)
                     scr_turntimer(150)
                 if (rr == 6)
@@ -1492,11 +1494,18 @@ if (global.fighting == true)
             actconral = 0
             actingral = false
             actcon = 1
-            if (instance_number(obj_sneo_tiny_ralsei) < 5)
+            if (instance_number(obj_sneo_tiny_ralsei) < 4)
             {
                 simultext = (simultotal == 1 ? stringsetloc("* The power Ralsei's fluffy warmth surrounds you!./%", "obj_spamton_neo_enemy_slash_Step_0_gml_643_0") : stringsetloc("* Ralsei defended you!/%", "obj_spamton_neo_enemy_slash_Step_0_gml_643_1"))
                 msgset(0, simultext)
                 scr_battletext_default()
+                var aa = 0
+                for (i = 0; i < instance_number(obj_sneo_tiny_ralsei); i++)
+                {
+                    fluff[i] = instance_find(obj_sneo_tiny_ralsei, i)
+                    fluff[i].place = (aa * 90)
+                    aa++
+                }
                 repeat (2)
                 {
                     instance_create(x, y, obj_sneo_tiny_ralsei)
@@ -1516,7 +1525,7 @@ if (global.fighting == true)
                         {
                             enemy[i] = instance_find(obj_sneo_tiny_ralsei, i)
                             enemy[i].place = a
-                            a += 120
+                            a += 180
                         }
                     }
                     if (instance_number(obj_sneo_tiny_ralsei) == 2)
@@ -1525,7 +1534,7 @@ if (global.fighting == true)
                         {
                             enemy[i] = instance_find(obj_sneo_tiny_ralsei, i)
                             enemy[i].place = a
-                            a += 180
+                            a += 270
                         }
                     }
                 }
@@ -1827,7 +1836,7 @@ if (global.fighting == true)
     {
         if (endcon == 2)
         {
-            var aa = 0
+            aa = 0
             if (instance_exists(obj_ch2_sceneex2) && obj_ch2_sceneex2.shop_spamton_bg_con > 0 && obj_ch2_sceneex2.shop_spamton_bg_con < 3)
                 aa = 1
             talktimer++

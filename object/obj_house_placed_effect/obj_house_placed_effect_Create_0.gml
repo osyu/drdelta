@@ -1,4 +1,4 @@
-sprite_index = choose(2075, 2076)
+sprite_index = choose(2076, 2077)
 image_speed = (0.4 + random(-0.1))
 image_xscale = (random_range(0.9, 1) * choose(-1, 1))
 image_yscale = (image_xscale * choose(-1, 1))

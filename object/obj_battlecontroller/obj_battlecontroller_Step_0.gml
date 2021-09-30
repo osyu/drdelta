@@ -283,7 +283,7 @@ if (global.myfight == 0)
         with (obj_smallface)
             depth = 10
         thischar = global.charturn
-        if right_p()
+        if (right_p() || left_p())
         {
             cango = true
             spellcoord = global.bmenucoord[2][global.charturn]
@@ -302,18 +302,6 @@ if (global.myfight == 0)
                 cango = false
             }
             if (cango == true)
-            {
-                if ((spellcoord % 2) == 0)
-                    global.bmenucoord[2][global.charturn] += 1
-                else
-                    global.bmenucoord[2][global.charturn] -= 1
-            }
-        }
-        if left_p()
-        {
-            cango = true
-            spellcoord = global.bmenucoord[2][global.charturn]
-            if (global.battlespell[thischar][1] != 0)
             {
                 if ((spellcoord % 2) == 0)
                     global.bmenucoord[2][global.charturn] += 1

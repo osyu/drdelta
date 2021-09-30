@@ -25,6 +25,11 @@ if (press_d == 1)
     py = wspeed
 if (press_u == 1)
     py = (-wspeed)
+if button2_h_ch1()
+{
+    px = ceil((px * 0.5))
+    py = ceil((py * 0.5))
+}
 xmeet = 0
 ymeet = 0
 xymeet = 0
