@@ -327,7 +327,10 @@ if (timer >= 1801)
 {
     creditalpha -= 0.05
     if (creditalpha < -0.1)
-        game_restart()
+    {
+        global.chapter_return = -1
+        game_restart_true()
+    }
 }
 if (timer > 1744 && timer < 1910)
     creditalpha += 0.02
@@ -335,5 +338,8 @@ if (timer > 1910)
 {
     creditalpha -= 0.02
     if (creditalpha <= -0.5)
-        game_restart()
+    {
+        global.chapter_return = -1
+        game_restart_true()
+    }
 }

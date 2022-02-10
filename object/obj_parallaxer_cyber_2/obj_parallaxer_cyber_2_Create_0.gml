@@ -40,7 +40,7 @@ if (room == room_dw_cyber_teacup_final)
 }
 with (obj_mainchara)
     bg = 1
-layersprites = [3134, 3135, 3137, 3138]
+layersprites = [3136, 3137, 3139, 3140]
 drawx = camerax()
 drawy = cameray()
 siner = 0

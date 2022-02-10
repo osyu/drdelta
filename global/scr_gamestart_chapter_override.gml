@@ -31,6 +31,7 @@ scr_gamestart_chapter_override = function()
     scr_itemremove(4)
     if (global.chapter == 2)
     {
+        global.darkzone = false
         global.flag[7] = 0
         global.flag[9] = 1
         global.flag[10] = 1

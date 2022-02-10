@@ -7,8 +7,9 @@ name = scr_84_get_lang_string_ch1("obj_savemenu_slash_Create_0_gml_7_0")
 level = 1
 love = 1
 time = 0
-roome = PLACE_DOGCHECK2
+roome = room_restart_true
 endme = 0
+save_data_error = 0
 global.interact = 1
 if ossafe_file_exists_ch1("dr.ini")
 {

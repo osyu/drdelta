@@ -1,5 +1,5 @@
 state = -1
-sprite_index = choose(1660, 1653, 1656, 1652, 1657, 1658)
+sprite_index = choose(1663, 1656, 1659, 1655, 1660, 1661)
 if (irandom(99) == 99)
     sprite_index = spr_poppup_ad_everyman
 scale = 0

@@ -74,7 +74,7 @@ if (instance_exists(obj_gamecontroller) && obj_gamecontroller.gamepad_active == 
             global.input_held[j] = false
         }
     }
-    for (var k = obj_afterimage_anim; k < obj_gigaqueen_intro_fight; k++)
+    for (var k = obj_sneo_smoke; k < obj_dw_city_mice3Fence; k++)
     {
         if (keyboard_check(global.input_k[k]) || gamepad_button_check(obj_gamecontroller.gamepad_id, global.input_g[k]))
         {

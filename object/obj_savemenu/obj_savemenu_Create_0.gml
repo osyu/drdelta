@@ -4,11 +4,13 @@ xcoord = 0
 ycoord = 0
 ini_ex = 0
 buffer = 3
+is_saving = 0
+save_data_error = 0
 name = stringsetloc("Kris", "obj_savemenu_slash_Create_0_gml_8_0")
 level = 1
 love = 1
 time = 0
-roome = PLACE_DOGCHECK2
+roome = room_restart_true
 saved = 0
 endme = 0
 menuno = 0
@@ -52,7 +54,7 @@ if ossafe_file_exists("dr.ini")
 {
     ini_ex = 1
     iniread = ossafe_ini_open("dr.ini")
-    name = ini_read_string(scr_ini_chapter(global.chapter, global.filechoice), "Name", "Kris")
+    name = ini_read_string(scr_ini_chapter(global.chapter, global.filechoice), "Name", stringsetloc("Kris", "obj_savemenu_slash_Create_0_gml_8_0"))
     level = ini_read_real(scr_ini_chapter(global.chapter, global.filechoice), "Level", 1)
     love = ini_read_real(scr_ini_chapter(global.chapter, global.filechoice), "Love", 1)
     time = ini_read_real(scr_ini_chapter(global.chapter, global.filechoice), "Time", 0)
@@ -81,7 +83,7 @@ level_current = global.lv
 time_current = global.time
 for (i = 0; i < 3; i++)
 {
-    name_file[i] = "Kris"
+    name_file[i] = stringsetloc("Kris", "obj_savemenu_slash_Create_0_gml_8_0")
     level_file[i] = 1
     love_file[i] = 1
     time_file[i] = 0
@@ -90,7 +92,7 @@ for (i = 0; i < 3; i++)
     {
         ini_ex_file[i] = 1
         iniread_file[i] = ossafe_ini_open("dr.ini")
-        name_file[i] = ini_read_string(scr_ini_chapter(global.chapter, i), "Name", "Kris")
+        name_file[i] = ini_read_string(scr_ini_chapter(global.chapter, i), "Name", stringsetloc("Kris", "obj_savemenu_slash_Create_0_gml_8_0"))
         level_file[i] = ini_read_real(scr_ini_chapter(global.chapter, i), "Level", 0)
         love_file[i] = ini_read_real(scr_ini_chapter(global.chapter, i), "Love", 1)
         time_file[i] = ini_read_real(scr_ini_chapter(global.chapter, i), "Time", 0)

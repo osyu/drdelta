@@ -2,7 +2,7 @@ scr_saveprocess = function(argument0)
 {
     global.lastsavedtime = global.time
     global.lastsavedlv = global.lv
-    file = ("filech2_" + string(argument0))
+    file = ((("filech" + string(global.chapter)) + "_") + string(argument0))
     myfileid = ossafe_file_text_open_write(file)
     ossafe_file_text_write_string(myfileid, global.truename)
     ossafe_file_text_writeln(myfileid)
@@ -211,6 +211,6 @@ scr_saveprocess = function(argument0)
     ossafe_file_text_write_real(myfileid, global.currentroom)
     ossafe_file_text_writeln(myfileid)
     ossafe_file_text_write_real(myfileid, global.time)
-    ossafe_file_text_close(myfileid)
-    return;
+    var is_valid = ossafe_file_text_close(myfileid)
+    return is_valid;
 }

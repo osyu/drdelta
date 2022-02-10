@@ -9,7 +9,8 @@ global.interact = 1
 with (obj_darkcontroller)
     charcon = 0
 global.msg[0] = stringsetloc("* Suddenly^1, your body seizes up^1.&* What are you looking at?/%", "obj_readable_room1_slash_Other_10_gml_13_0")
-global.msg[0] = stringset("* [NO TEXT] (obj_readable_room1)/%")
+if scr_debug()
+    global.msg[0] = stringset("* [NO TEXT] (obj_readable_room1)/%")
 if (room == room_krisroom)
 {
     if (y < 150)

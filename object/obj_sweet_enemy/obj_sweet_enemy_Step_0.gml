@@ -97,6 +97,8 @@ if (global.monster[myself] == true)
                 global.monsterattackname[myself] = "musical bullets"
                 if (!instance_exists(obj_musicalbullet_controller))
                 {
+                    if (turns == 0 || turns == 2 || turns == 4)
+                        mytarget = 0
                     dc = instance_create(x, y, obj_musicalbullet_controller)
                     dc.damage = (global.monsterat[myself] * 5)
                     dc.target = mytarget

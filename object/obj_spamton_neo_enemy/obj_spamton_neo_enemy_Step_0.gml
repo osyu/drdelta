@@ -1,4 +1,3 @@
-var _temp_local_var_5, _temp_local_var_6, _temp_local_var_57, _temp_local_var_61;
 if (bigshot == 1)
     global.sp = 5
 if (cantspareinit == 0 && scr_sideb_get_phase() > 2 && i_ex(obj_battlecontroller))
@@ -1334,27 +1333,20 @@ if (global.fighting == true)
             i = irandom(5)
             a = -1
             maxv = 0
-            var _temp_local_var_57 = 6
-            if (6 <= 0)
+            repeat (6)
             {
-            }
-            else
-            {
-                while (true)
+                if (partvisible[i] == true && partweakened[i] > 0)
                 {
-                    if (partvisible[i] == true && partweakened[i] > 0)
-                        a = i
-                    else
-                    {
-                        i++
-                        if (i > 5)
-                            i = 0
-                        if (partvisible[i] == true)
-                            maxv++
-                        var _temp_local_var_57 = (6 - 1)
-                        if (6 - 1)
-                            continue
-                    }
+                    a = i
+                    break
+                }
+                else
+                {
+                    i++
+                    if (i > 5)
+                        i = 0
+                    if (partvisible[i] == true)
+                        maxv++
                 }
             }
             if (vinebgcount < 1)
@@ -1418,33 +1410,26 @@ if (global.fighting == true)
             i = irandom(5)
             a = -1
             maxv = 0
-            var _temp_local_var_61 = 6
-            if (6 <= 0)
+            repeat (6)
             {
-            }
-            else
-            {
-                while (true)
+                if (partvisible[i] == true && partweakened[i] > 0)
                 {
-                    if (partvisible[i] == true && partweakened[i] > 0)
-                        a = i
-                    else
-                    {
-                        i++
-                        if (i > 5)
-                            i = 0
-                        if (partvisible[i] == true)
-                            maxv++
-                        var _temp_local_var_61 = (6 - 1)
-                        if (6 - 1)
-                            continue
-                    }
+                    a = i
+                    break
+                }
+                else
+                {
+                    i++
+                    if (i > 5)
+                        i = 0
+                    if (partvisible[i] == true)
+                        maxv++
                 }
             }
             if (vinebgcount < 1)
                 maxvinecount = maxv
             multicut = 1
-            if (global.hp[1] <= 0 && global.hp[3] <= 0)
+            if (global.hp[1] <= 0 && global.hp[2] <= 0)
             {
                 multicut = 2
                 mercyset = 4
@@ -1541,7 +1526,7 @@ if (global.fighting == true)
             }
             else
             {
-                msgsetloc(0, "* You have too many tiny Ralsei!/%", "obj_spamton_neo_enemy_slash_Step_0_gml_679_0")
+                msgsetloc(0, "* Too many fluff balls!&* Can't make any more!/%", "obj_spamton_neo_enemy_slash_Step_0_gml_679_0")
                 scr_battletext_default()
                 a = 2
                 if (global.hp[2] < global.hp[3])
@@ -1823,6 +1808,12 @@ if (global.fighting == true)
                 {
                     with (whiteall)
                     {
+                        if (global.hp[1] < 1)
+                            global.hp[1] = 1
+                        if (global.hp[2] < 1)
+                            global.hp[2] = 1
+                        if (global.hp[3] < 1)
+                            global.hp[3] = 1
                         if i_ex(obj_ch2_sceneex2)
                             obj_ch2_sceneex2.forcend = 1
                         if i_ex(obj_ch2_sceneex2)
@@ -2035,6 +2026,12 @@ if (global.fighting == true)
                 {
                     with (blackall2)
                     {
+                        if (global.hp[1] < 1)
+                            global.hp[1] = 1
+                        if (global.hp[2] < 1)
+                            global.hp[2] = 1
+                        if (global.hp[3] < 1)
+                            global.hp[3] = 1
                         if i_ex(obj_ch2_sceneex2)
                             obj_ch2_sceneex2.forcend = 1
                         if i_ex(obj_ch2_sceneex2)

@@ -1,4 +1,3 @@
-var _temp_local_var_5;
 if (obj_spamton_neo_enemy.singleshotmercy > 9)
 {
     with (obj_spamton_neo_enemy)
@@ -40,27 +39,20 @@ if (global.fighting == true)
                 var i = irandom(5)
                 var a = -1
                 var maxv = 0
-                var _temp_local_var_5 = 6
-                if (6 <= 0)
+                repeat (6)
                 {
-                }
-                else
-                {
-                    while (true)
+                    if (partvisible[i] == true && partweakened[i] > 0)
                     {
-                        if (partvisible[i] == true && partweakened[i] > 0)
-                            a = i
-                        else
-                        {
-                            i++
-                            if (i > 5)
-                                i = 0
-                            if (partvisible[i] == true)
-                                maxv++
-                            var _temp_local_var_5 = (6 - 1)
-                            if (6 - 1)
-                                continue
-                        }
+                        a = i
+                        break
+                    }
+                    else
+                    {
+                        i++
+                        if (i > 5)
+                            i = 0
+                        if (partvisible[i] == true)
+                            maxv++
                     }
                 }
                 if (vinebgcount < 1)

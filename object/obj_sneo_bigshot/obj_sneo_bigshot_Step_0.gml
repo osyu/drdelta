@@ -35,6 +35,7 @@ if (timer != 0)
     timer++
 if (timer > 13)
 {
+    instance_create((camerax() + 320), (cameray() + 240), obj_sneo_smoke)
     instance_destroy()
     snd_volume(snd_rumble, 0, 70)
     obj_spamton_neo_enemy.stoprumblesfx = 70

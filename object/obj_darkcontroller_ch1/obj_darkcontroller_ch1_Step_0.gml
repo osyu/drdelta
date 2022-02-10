@@ -1119,11 +1119,11 @@ if (global.interact == 5)
                         wmsg = wmessage2temp
                     if (wwho == 3)
                         wmsg = wmessage3temp
-                    if (wwho == 1 && weaponchar1temp == 1)
+                    if (wwho == 1 && weaponchar1temp == true)
                         canequip = true
-                    if (wwho == 2 && weaponchar2temp == 1)
+                    if (wwho == 2 && weaponchar2temp == true)
                         canequip = true
-                    if (wwho == 3 && weaponchar3temp == 1)
+                    if (wwho == 3 && weaponchar3temp == true)
                         canequip = true
                 }
                 if (global.submenu == 13 || global.submenu == 14)

@@ -30,6 +30,6 @@ scr_sort_by_distance = function(argument0, argument1, argument2, argument3)
         }
     }
     if (_emergencyStop >= 100)
-        scr_debug_print("EMERGENCY STOP HAD TO BE CALLED (BAD)")
+        scr_debug_print("")
     return _array;
 }

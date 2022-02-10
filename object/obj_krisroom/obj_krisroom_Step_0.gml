@@ -168,7 +168,13 @@ if (global.chapter == 1)
         {
             _remfilechoice = global.filechoice
             global.filechoice += 3
-            scr_save()
+            var is_valid = scr_save()
+            if (!is_valid)
+            {
+                var error_message = instance_create(0, 0, obj_savedata_error)
+                error_message.type = "auto"
+                error_message.error_type = "save_failed"
+            }
             global.filechoice = _remfilechoice
             mus_volume(global.currentsong[1], 0, 100)
             fade = instance_create(0, 0, obj_fadeout)
