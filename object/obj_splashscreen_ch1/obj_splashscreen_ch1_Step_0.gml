@@ -29,8 +29,7 @@ if loaded
             if (heart_pos_x == heart_pos_x_default)
             {
                 if (os_type == os_switch)
-                {
-                }
+                    switch_show_store(72199087622348800)
                 else if (os_type == os_ps4)
                 {
                 }

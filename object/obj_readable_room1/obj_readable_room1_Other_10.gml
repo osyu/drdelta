@@ -585,11 +585,6 @@ if (global.chapter == 1)
 }
 if (room == room_cc_clover)
 {
-    if (x < 90)
-    {
-        if (global.flag[412] == 0)
-            global.flag[412] = 1
-    }
     global.msg[0] = stringsetloc("* (It's a bed for three people^1, or one three-headed person.)/%", "obj_readable_room1_slash_Other_10_gml_662_0")
     if (x > (room_width / 2))
     {
@@ -1873,6 +1868,8 @@ if (room == room_dw_castle_east_door)
 }
 if (room == room_dw_castle_dojo)
 {
+    if (global.flag[412] == 0)
+        global.flag[412] = 1
     scr_speaker("no_name")
     global.msg[0] = stringsetloc("* (It's a bed for three people^1, or one three-headed person.)/%", "obj_readable_room1_slash_Other_10_gml_2177_0")
 }

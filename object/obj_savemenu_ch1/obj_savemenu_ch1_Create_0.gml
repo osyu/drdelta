@@ -23,6 +23,7 @@ if ossafe_file_exists_ch1("dr.ini")
     var room_offset = room_index
     if (room_index < ROOM_INITIALIZE_ch1)
         room_offset = (ROOM_INITIALIZE_ch1 + room_index)
+    room_offset = scr_get_valid_room(1, room_offset)
     roome = room_offset
     ossafe_ini_close_ch1()
     ossafe_savedata_save_ch1()

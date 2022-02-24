@@ -8,6 +8,11 @@ global.savedata_async_load = 0
 global.savedata_error = 0
 global.savedata_debuginfo = ""
 global.savedata_pause = 0
+global.version = "1.09"
+if (os_type == os_switch)
+    global.version = "1.05"
+if (os_type == os_ps4)
+    global.version = "1.05"
 init_loaded = 0
 chapter_is_loading = 0
 reload_textures = 1
@@ -69,7 +74,7 @@ if global.is_console
     application_surface_enable(true)
     application_surface_draw_enable(false)
 }
-global.debug = true
+global.debug = false
 con = "init"
 file_found = 0
 highestUncompletedChapter = 0

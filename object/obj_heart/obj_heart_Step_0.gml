@@ -39,27 +39,7 @@ if canmove
         disableslow = 0
 }
 if (color == c_black)
-{
-    if button3_h()
-    {
-        if button1_p()
-        {
-            if (remove_slow_z_buffer > 40)
-                remove_slow_z_buffer = 40
-            remove_slow_z_buffer -= 10
-            if (remove_slow_z_buffer <= 0)
-            {
-                if (global.flag[22] == 0)
-                    global.flag[22] = 1
-                else
-                    global.flag[22] = 0
-                snd_play(snd_swallow)
-                remove_slow_z_buffer = 40
-            }
-        }
-    }
-}
-remove_slow_z_buffer += 0.5
+    remove_slow_z_buffer += 0.5
 xmeet = 0
 ymeet = 0
 xymeet = 0

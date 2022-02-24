@@ -175,6 +175,7 @@ if (MENU_NO == 1 || MENU_NO == 4 || MENU_NO == 6 || MENU_NO == 7 || MENU_NO == 1
                 ini_write_real(scr_ini_chapter(global.chapter, MENUCOORD[5]), "Room", 0)
                 ini_write_real(scr_ini_chapter(global.chapter, MENUCOORD[5]), "Date", 0)
                 ini_write_real(scr_ini_chapter(global.chapter, MENUCOORD[5]), "UraBoss", 0)
+                ini_write_string(scr_ini_chapter(global.chapter, MENUCOORD[5]), "Version", "0")
                 ossafe_ini_close()
                 ossafe_savedata_save()
                 if ossafe_file_exists((("keyconfig_" + string(MENUCOORD[5])) + ".ini"))

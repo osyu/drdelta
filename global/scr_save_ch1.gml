@@ -23,6 +23,7 @@ scr_save_ch1 = function()
         else if (global.flag[241] == 7)
             uraboss = 2
         ini_write_real(("G" + string(global.filechoice)), "UraBoss", uraboss)
+        ini_write_string(("G" + string(global.filechoice)), "Version", global.version)
         ossafe_ini_close_ch1()
         ossafe_savedata_save_ch1()
     }
