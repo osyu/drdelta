@@ -278,7 +278,8 @@ scr_load = function()
     {
         audio_group_set_gain(1, global.flag[15], 0)
         audio_set_master_gain(0, global.flag[17])
-        global.currentroom = scr_get_valid_room(global.chapter, global.currentroom)
+        if (global.filechoice != 9)
+            global.currentroom = scr_get_valid_room(global.chapter, global.currentroom)
         __loadedroom = global.currentroom
         if (__loadedroom == room_dw_castle_area_2 && global.plot >= 11)
             __loadedroom = room_dw_castle_area_2_transformed

@@ -276,7 +276,8 @@ scr_load_ch1 = function()
             room_offset = (ROOM_INITIALIZE_ch1 + room_index)
         global.currentroom = room_offset
     }
-    global.currentroom = scr_get_valid_room(global.chapter, global.currentroom)
+    if (global.filechoice != 9)
+        global.currentroom = scr_get_valid_room(global.chapter, global.currentroom)
     __loadedroom = global.currentroom
     if (__loadedroom == room_forest_savepoint3_ch1 && global.plot >= 130)
         __loadedroom = room_forest_fightsusie_ch1

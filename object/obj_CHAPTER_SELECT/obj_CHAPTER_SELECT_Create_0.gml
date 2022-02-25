@@ -8,11 +8,11 @@ global.savedata_async_load = 0
 global.savedata_error = 0
 global.savedata_debuginfo = ""
 global.savedata_pause = 0
-global.version = "1.09"
+global.version = "1.10"
 if (os_type == os_switch)
-    global.version = "1.05"
+    global.version = "1.06"
 if (os_type == os_ps4)
-    global.version = "1.05"
+    global.version = "1.06"
 init_loaded = 0
 chapter_is_loading = 0
 reload_textures = 1
